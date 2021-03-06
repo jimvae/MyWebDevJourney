@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+    </head>
+    <body>
+        <!-- Use Get not Post -->
+        <!-- Div is block, span is for in line (invisible containers) -->
+        <div>
+            <form method="GET">
+                <span>First Name: <input type="text" name="firstname"></span><br>
+                Last Name: <input type="text" name="lastname"><br>
+                Email <input type="email" required name="email"><br>
+                Password: <input type="password" min="5" name="password"><br>
+                Birthday: <input type="date" name="Birthday"><br>
+                Gender:  <br>
+                    <input type="radio" name="gender" value="Female">Female<br>
+                    <input type="radio" name="gender" value="Female">Male<br>
+                Pets: <br>
+                    <input type="checkbox" name="Pets" value="Cat"> Cat <br>
+                    <input type="checkbox" name="Pets" value="Dog"> Dog <br>
+                Cars: <br>
+                <select name="Cars">
+                    <option value="volvo">Volve</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="ferrari">Ferrari</option>
+                </select> <br>
+                <input type="submit" value="Register">
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+    
+
+</html>
+<!-- ?
+firstname=Jim
+&lastname=Vincent
+&email=sup%40gmail.com
+&password=somepassword
+&Birthday=2021-03-25
+&gender=Female
+&Pets=Cat
+&Pets=Dog
+&Cars=toyota -->
