@@ -1,0 +1,24 @@
+h2 {
+    color: blue;
+
+}
+
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    /* top right bottom left */
+    padding: 5px 20px 5px 20px;
+    /* outside the padding */
+    margin: 20px;
+
+    /* for content, use width and height */
+}
+
+p {
+    font-size:20px
+}
+
+/* relative to the paragraph */
+span {
+    font-size: 2em;
+}

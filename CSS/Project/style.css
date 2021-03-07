@@ -1,0 +1,67 @@
+/* Selector {
+    Property: value;
+} */
+
+/* element (space) element2 -> element 2 inside element */
+/* element > element2 -> element 2 immediate parent element */
+/* element + element2 -> element 2 immediately after element */
+/* * refers to all */
+* {
+    text-align:right;
+}
+body {
+    background-image: url(spiderman.jpg);
+    background-size: cover;
+}
+/* element, element */
+p {
+    color: #A0F73C;
+    text-align: center;
+    /* border: 5px solid #933157; OR */
+    /* border: 5px solid rgb(147, 49, 87); */
+    /* with opacity */
+    border: 5px solid rgba(147, 49, 87, 0.8);
+
+    cursor: pointer;
+}
+footer {
+    clear:both;
+    text-align: center;
+}
+img {
+    float:left;
+}
+p {
+    line-height: 20px;
+    font-style: italic;
+    font-weight:bold;
+    font-size:80%;
+    /* if TNR is not availablem choose Georgia */
+    font-family: "Poiret One", Georgia;
+}
+
+/* takes the last input */
+p {
+    color: green;
+}
+
+li {
+    list-style: none;
+    display: block;
+    color: white;
+    display: inline-block;
+}
+
+/* class */
+.webtext:last-child {
+    border: 5px dashed #933157;
+}
+
+/* id */
+#div1 {
+    background: rgba(255,0,255, 0.4);
+}
+
+#div2:hover {
+    background: rgba(28, 206, 206, 1);
+}
