@@ -2,6 +2,17 @@
     Property: value;
 } */
 
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /* No repeat, cebter */
+    background: url(spiderman.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 /* element (space) element2 -> element 2 inside element */
 /* element > element2 -> element 2 immediate parent element */
 /* element + element2 -> element 2 immediately after element */
@@ -9,10 +20,7 @@
 * {
     text-align:right;
 }
-body {
-    background-image: url(spiderman.jpg);
-    background-size: cover;
-}
+
 /* element, element */
 p {
     color: #A0F73C;
