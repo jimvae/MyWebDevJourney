@@ -8,8 +8,20 @@ function inputLength() {
 
 function createListElement() {
 	var li = document.createElement("li");
+	var deleteButton = document.createElement("button");
+	var div = document.createElement("div");
+
+	li.classList.add("taskClass");
+	div.classList.add("wrapper");
+	deleteButton.classList.add("delClass");
+
+	ul.appendChild(div);
+	div.append(li, deleteButton);
+
 	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
+	deleteButton.appendChild(document.createTextNode("delete"));
+
+
 	input.value = "";
 }
 
@@ -24,6 +36,27 @@ function addListAfterKeypress(event) {
 		createListElement();
 	}
 }
+
+// TAGNAME IS ALL CAPS
+function doneTask(task) {
+	if (task.target.tagName === "LI") {
+		task.target.classList.toggle("done");
+	}
+}
+
+function deleteListElement(element) {
+	if (element.target.className === "delClass") {
+		element.target.parentElement.remove();
+	}
+}
+
+function handleUIClick(element) {
+	doneTask(element);
+	deleteListElement(element);
+}
+
+
+ul.addEventListener("click", handleUIClick);
 
 button.addEventListener("click", addListAfterClick);
 
