@@ -1,0 +1,43 @@
+DOM Selectors
+--------------
+getElementsByTagName() -> returns an array
+document.getElementsByTagName("first");
+
+getElementsByClassName -> returns an array
+getElementById
+
+querySelector -> selects the first item that it finds
+querySelectorAll -> selects all of them
+document.querySelectorAll("li");
+
+getAttribute
+document.querySelectorAll("li").getAttribute("random");
+setAttribute
+document.querySelector("li").setAttribute("old", "new");
+
+##Changing Styles
+style.{property} //ok
+document.querySelector("h1").style.background = "green";
+
+className //best
+document.querySelector("h1") = "newClassName";
+classList //best
+document.querySelector("li").classList; 
+
+classList.add
+document.querySelector("li").classList.add("newClassName");
+classList.remove
+document.querySelector("li").classList.remove("existingClassName");
+classList.toggle
+document.querySelector("li").classList.toggle("existingClassName");
+---> switch to add or remove automatically
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+document.querySelector("li").parentElement;
+
+children
+document.querySelector("ul").children;
+
+##It is important to CACHE selectors in variables
