@@ -37,6 +37,11 @@ var b = true;
 var c = 789;
 a = 'test2';
 
+let a = 'test';
+const b = true;
+const c = 789;
+a = test2;
+
 
 // Destructuring
 var person = {
@@ -51,6 +56,8 @@ var lastName = person.lastName;
 var age = person.age;
 var eyeColor = person.eyeColor;
 
+const {person, firstName, lastName, age, eyeColor} = person;
+
 
 // Object properties
 var a = 'test';
@@ -63,10 +70,11 @@ var okObj = {
   c: c
 };
 
+var okObj2 = {a, b, c};
 
 // Template strings
 var message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???";
-
+var message2 = `Hello + ${firstName} have I met you before? I think we met in ${city} last summer no???`;
 
 // default arguments
 // default age to 10;
@@ -74,8 +82,10 @@ function isValidAge(age) {
     return age
 }
 
+const isValidAge = (age=10) => age;
 // Symbol
 // Create a symbol: "This is my first Symbol"
+var sym1 = Symbol("This is my first symbol");
 
 // Arrow functions
 function whereAmI(username, location) {
@@ -85,3 +95,5 @@ function whereAmI(username, location) {
         return "I am totally lost!";
     }
 }
+
+const whereAmI = (username, location) => (username && location) ? "I am not lost" : "I am totally lost!";
