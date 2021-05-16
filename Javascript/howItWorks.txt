@@ -1,0 +1,61 @@
+JS - Javascript is a single threaded language that can be non - blocking
+
+Why is JS single threaded? -> Prevent Deadlock
+
+
+Program
+- allocate memory
+- parase and execute (read and run commands)
+
+Javascript Engine (V8 for Chrome)
+- Memory Heap 
+- Call Stack
+
+Memory Heap
+const a = 1;
+
+Memory Leak
+- unused memory, just laying around (if you never clean up, it will accumulate useless space)
+
+Call Stack: one() then two() then console.log(4)
+
+(top is removed first), first in, last out
+console.log(4)
+two()
+one()
+
+const one = () => {
+    const two = 90 => {
+        console.log(4);
+    }
+    const two();
+}
+
+Synchronous Programming -> step by step
+
+Asyncrhonous Programming -> use different threads
+console.log(1);
+setTimeout(() => {
+    console.log('2');
+}, 2000);
+
+console.log('3');
+// prints 1, 3, 2
+// after the timeout, it does a call back on console.log('2')
+// If there are anything in the callback queue after the execption. shift them all to the call stack and execute
+
+Javascript Rum-Time Environment
+Timeout is part of the web api
+
+
+
+remember element.addClickListener('click' () => {
+    // do smth
+});
+
+same thing, it does a callback
+
+
+
+
+
