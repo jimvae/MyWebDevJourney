@@ -1,0 +1,40 @@
+3 types of NPM packages -> search this yourself
+
+you can download it globally or locally
+
+-download live-server
+npm install -g live-server 
+(intalled globally, cna be used by the whole laptop)
+
+
+- download lodash
+lodash has whole lot of functions
+npm install lodash
+(installed locally)
+
+
+import { without}
+
+npm install - browserify
+(allows us synthax for node js)
+
+
+
+What is semver? Semantic Versioning
+dependencies: {
+    "lodash": "^4.17.5"
+    5 refers to patch release *bug fixes
+    17 is minor release
+    4 is a major release (might break some websites that depends on it)
+}
+
+
+what are dev dependencies ?
+dependencies that are only needed for testing, you won't see it 
+on actual websites. taken out during release
+
+
+take care of the scripts -> npm run customScript
+
+
+security alers -> can automate security fixes
