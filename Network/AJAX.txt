@@ -1,0 +1,9 @@
+Update the webpage without the reloading the page
+
+AJAX is a method of combining stuff
+
+AJAX allows content to be more responsive
+
+AJAX call
+
+If a Promise is returned, use '.then' to fetch the data

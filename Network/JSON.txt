@@ -1,0 +1,9 @@
+JSON: JavaScript Object Notation
+- a synthax for storing and exchanging data
+- text, written with JS object notation
+
+var obj = JSON.parse(json);
+var myJSON =  JSON.stringify(obj);
+
+
+XML can also be used, just different formula (not efficient)

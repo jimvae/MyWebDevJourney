@@ -1,0 +1,5 @@
+HTTPS -> more secure
+HTTP -> anyone can just secure
+
+post -> form data
+get -> query strings

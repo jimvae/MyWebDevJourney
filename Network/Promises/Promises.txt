@@ -1,0 +1,5 @@
+A promise is an object that may produce a single value some time in the future
+Either a resolve value or a reason why it is not resolved (reject)
+
+Callbacks (before promises) -> we normally use addEventListener for this
+
