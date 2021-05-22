@@ -1,0 +1,4 @@
+generating package.json to enable ES6 -> npm init -y 
+add "type": "module", to package.json
+sort of like a live server, not necessary to download :npm install nodemon --save-dev
+download express: npm install express
